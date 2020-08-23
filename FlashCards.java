@@ -56,4 +56,21 @@ public class FlashCards
     {
         FlashCards.remove(key);
     }
+     /**
+     * Return the value of the FlashCard
+     */
+    public void modificarFlashCard(String key,String value)
+    {
+        boolean noExiste= true;
+        for (String i : FlashCards.keySet()) {
+            if(i.equals(key)){
+                noExiste=false;
+                FlashCards.put(key, value);
+                break;
+            }
+        }
+        if(noExiste){
+        System.out.println("No se encontro esa flashcard");
+        }
+    }
 }

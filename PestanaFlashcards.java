@@ -24,9 +24,13 @@ public class PestanaFlashcards
         this.flashcards = new FlashCards();                
     }
     
-    public void getFlashcards()
+    public void mostrar_Flashcards()
     {
         System.out.println( this.flashcards.getAllFlashCards() );
+    }   
+    public void crear_Flashcards(String key,String value)
+    {
+        this.flashcards.putValue(key,value);
     }   
 
     }
