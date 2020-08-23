@@ -21,7 +21,15 @@ public class Recordatorio
         this.texto_seleccionado=texto_seleccionado;        
         this.textoRepetido=new TextoRepetido(this);
     }
-
+    /**
+     * ELIMINAR ESOOO
+     */
+    public TextoRepetido getObjeto()
+    {
+       
+        return this.textoRepetido;
+    }
+    
     /**
      * An example of a method - replace this comment with your own
      * 
@@ -32,6 +40,6 @@ public class Recordatorio
     {
         this.texto_recordatorio=texto_recordatorio;
         this.texto_seleccionado=texto_seleccionado;
-        
+        this.textoRepetido=new TextoRepetido(this);
     }
 }

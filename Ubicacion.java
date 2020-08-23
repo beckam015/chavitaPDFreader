@@ -10,7 +10,7 @@
 public class Ubicacion
 {
     // instance variables - replace the example below with your own
-    private ArchivoPDF archivopdf;
+    
     private int x;
     private  int y;
     private  int pagina;

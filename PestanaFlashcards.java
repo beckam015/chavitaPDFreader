@@ -9,8 +9,8 @@ import java.util.HashMap;
 public class PestanaFlashcards
 {
     // instance variables - replace the example below with your own
-    private int x;
-    private FlashCards flashcards;
+
+    public FlashCards flashcards;
     public static void main ( String[] args)
     {
         
@@ -26,10 +26,7 @@ public class PestanaFlashcards
     
     public void getFlashcards()
     {
-        System.out.println( flashcards.getAllFlashCards() );
+        System.out.println( this.flashcards.getAllFlashCards() );
     }   
-    public FlashCards getFlashcard()
-    {
-        return this.flashcards;
-    }
+
     }

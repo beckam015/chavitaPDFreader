@@ -8,7 +8,7 @@ import java.util.HashMap;
 public class FlashCards
 {
     // instance variables - replace the example below with your own
-    private static HashMap<String,String> FlashCards;
+    public static HashMap<String,String> FlashCards;
     
     public static void main ( String[] args)
     {

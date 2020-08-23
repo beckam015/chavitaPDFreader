@@ -9,7 +9,7 @@ public class Nota
 {
     // instance variables - replace the example below with your own
    
-    private Ubicacion ubicacion;
+    public Ubicacion ubicacion;
     private String textoNota;
     public static void main ( String[] args)
     {

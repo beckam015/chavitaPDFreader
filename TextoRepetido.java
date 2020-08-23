@@ -12,8 +12,8 @@ import java.util.Scanner;
 public class TextoRepetido
 {
     // instance variables - replace the example below with your own
-    private static String texto_seleccionado;
-    private static ColorResaltado color;
+    public static String texto_seleccionado;
+    public static ColorResaltado color;
     //private ColorResaltado colorresaltado;
     
     
@@ -32,7 +32,6 @@ public class TextoRepetido
         System.out.println("Escriba el color");
         Scanner entradaEscaner = new Scanner (System.in); //Creación de un objeto Scanner
         String color = entradaEscaner.nextLine ();
-        System.out.println(color);
         this.texto_seleccionado=recordatorio.texto_seleccionado;
         ubicarTextoEnPdf(color);
     }
@@ -41,22 +40,18 @@ public class TextoRepetido
      */
     public void ubicarTextoEnPdf(String color)
     {
-        System.out.println("Ubicando texto...");
-        System.out.println("Ubicando texto...");
-        System.out.println("Ubicando texto...");        
-        String ubicacionTexto="112344";
-        for(int i=1;i<=5;i++){
-            ubicacionTexto=ubicacionTexto + "1";
-            resaltar(color , ubicacionTexto);
-        }
+        System.out.println("Ubicando texto...");       
+        String ubicacionTexto="112344";        
+        resaltar(color , ubicacionTexto);
+        
         
     }
     /**
      * Constructor for objects of class TextoRepetido
      */
-    public void resaltar(String color, String ubicacionTexto)
+    public ColorResaltado resaltar(String color, String ubicacionTexto)
     {
-        this.color=new ColorResaltado(color,texto_seleccionado,ubicacionTexto);
+        return this.color= new ColorResaltado(color,texto_seleccionado,ubicacionTexto);
         
     }
     
