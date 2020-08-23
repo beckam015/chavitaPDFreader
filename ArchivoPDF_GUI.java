@@ -1,7 +1,7 @@
 
 /**
  * Con esta clase, el usuario podrá cargar un archivo PDF.
- * 
+ * No se harán test con esta clase pues depende de la GUI!
  * @author (your name) 
  * @version (a version number or a date)
  */

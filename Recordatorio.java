@@ -22,12 +22,12 @@ public class Recordatorio
         this.textoRepetido=new TextoRepetido(this);
     }
     /**
-     * ELIMINAR ESOOO
+     * 
      */
-    public TextoRepetido getObjeto()
+    public String getTextoSeleccionado()
     {
        
-        return this.textoRepetido;
+        return this.textoRepetido.getTexto_seleccionado();
     }
     
     /**

@@ -9,7 +9,7 @@ public class Nota
 {
     // instance variables - replace the example below with your own
     public Ubicacion ubicacion;
-    private String textoNota;
+    public String textoNota;
     public static void main ( String[] args)
     {
         
@@ -30,6 +30,10 @@ public class Nota
     {
         this.textoNota=textoNota;
         this.ubicacion = new Ubicacion(ubicacionX,ubicacionY, pagina);       
+    }
+    public String mostrarNota()
+    {
+       return this.textoNota;      
     }
     
 }

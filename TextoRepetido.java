@@ -54,6 +54,14 @@ public class TextoRepetido
         return this.color= new ColorResaltado(color,texto_seleccionado,ubicacionTexto);
         
     }
+    /**
+     * Constructor for objects of class TextoRepetido
+     */
+    public String getTexto_seleccionado()
+    {
+        return texto_seleccionado;
+        
+    }
     
 
 }

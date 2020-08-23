@@ -34,17 +34,17 @@ public class FlashCards
     /**
      * Return the value of the FlashCard
      */
-    public void getValue(String key)
+    public String getValue(String key)
     {
-        System.out.println(FlashCards.get(key));
+        return (FlashCards.get(key));
     }
     /**
      * Return the value of the FlashCard
      */
     public String getAllFlashCards()
-    {   String contenido ="\n";
+    {   String contenido ="";
         for (String i : FlashCards.keySet()) {
-            contenido = contenido + ("\n key: " + i + " value: " + FlashCards.get(i));
+            contenido = contenido + ("key: " + i + " value: " + FlashCards.get(i));
         }
         
         return contenido;
